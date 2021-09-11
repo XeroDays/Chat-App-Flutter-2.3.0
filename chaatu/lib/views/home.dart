@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
   String searchBar = "";
   Stream<QuerySnapshot>? userStream;
 
-  late String _myUid, _Myname, _Myusername, _Myuserprofile, _Myemail;
+  late String _Myusername;
   bool isSearching = false;
   Stream<QuerySnapshot>? chatroomsStream;
   processOnInitialize() async {
@@ -34,11 +34,7 @@ class _HomeState extends State<Home> {
   }
 
   Future getMyInfo() async {
-    _myUid = (await SharedPrefController().getUserID())!;
-    _Myname = (await SharedPrefController().getDisplayName())!;
     _Myusername = (await SharedPrefController().getUsername())!;
-    _Myuserprofile = (await SharedPrefController().getPRofilePic())!;
-    _Myemail = (await SharedPrefController().getEmail())!;
   }
 
   @override

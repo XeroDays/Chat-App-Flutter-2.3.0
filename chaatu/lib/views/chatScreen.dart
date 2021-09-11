@@ -21,16 +21,12 @@ class _ChatScreenState extends State<ChatScreen> {
   String chatRoomID = "";
   String messageID = "";
   Stream<QuerySnapshot>? messageStream;
-  late String _myUid, _Myname, _Myusername, _Myuserprofile, _Myemail;
+  late String _Myusername;
 
   TextEditingController txtMsg = new TextEditingController();
 
   Future getMyInfo() async {
-    _myUid = (await SharedPrefController().getUserID())!;
-    _Myname = (await SharedPrefController().getDisplayName())!;
     _Myusername = (await SharedPrefController().getUsername())!;
-    _Myuserprofile = (await SharedPrefController().getPRofilePic())!;
-    _Myemail = (await SharedPrefController().getEmail())!;
 
     chatRoomID = fetchChatroomID(widget.chatWithUsername, _Myusername);
   }
@@ -163,8 +159,8 @@ class _ChatScreenState extends State<ChatScreen> {
 }
 
 class MessageBubble extends StatelessWidget {
-  bool isMine;
-  String message;
+  final bool isMine;
+  final String message;
   MessageBubble(this.isMine, this.message);
 
   @override
