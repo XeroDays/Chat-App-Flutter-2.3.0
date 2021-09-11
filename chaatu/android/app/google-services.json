@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378348393756",
+    "project_id": "chattu-cf886",
+    "storage_bucket": "chattu-cf886.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378348393756:android:5e3405ef4be849f2e796d9",
+        "android_client_info": {
+          "package_name": "com.skysol.chattu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378348393756-strk7rp0dcgkis1d6jj8osmlnu41qfgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq8xI8nPWxBp2c8rii4xJvsBdXbStKSGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378348393756-strk7rp0dcgkis1d6jj8osmlnu41qfgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
